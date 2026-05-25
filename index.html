@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Recepta de la Paella Valenciana de Veritat</title>
+    <style>
+        :root {
+            --primary: #e65c00;
+            --primary-dark: #b34400;
+            --secondary: #2c3e50;
+            --bg: #f9f9f9;
+            --card-bg: #ffffff;
+            --text: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg);
+            color: var(--text);
+            padding-bottom: 40px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: var(--secondary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ingredients-box {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: baseline;
+        }
+
+        ul li::before {
+            content: "🔸";
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        ul li strong {
+            color: var(--primary-dark);
+            margin-right: 5px;
+        }
+
+        .step {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .step h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        blockquote {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            padding: 15px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+
+        .tips {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .tips h3 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .tips ul li::before {
+            content: "💡";
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>La Paella Valenciana Autèntica</h1>
+        <p>La recepta tradicional de l'horta, sense invencions ni experiments.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro">
+            Anem a pams: fer una "paella de veritat" és entrar en terreny sagrat. Si t'escolta un valencià i hi poses pèsols o ceba, tindrem un conflicte diplomàtic. La clau de la paella autèntica no és només el que hi poses, sinó el que <strong>no</strong> hi poses.
+        </div>
+
+        <h2>🥘 Ingredients (per a 4 persones)</h2>
+        <div class="ingredients-box">
+            <ul>
+                <li><strong>Arròs:</strong> 400g de varietat Bomba o Sènia (D.O. València).</li>
+                <li><strong>Carn:</strong> 500g de pollastre i 400g de conill (tallats a trossos petits).</li>
+                <li><strong>Verdura:</strong> 200g de ferradura (mongeta tendra plana) i 150g de garrofó (la mongeta blanca gran i plana). També pot ser congelat o cuit si no és fresc.</li>
+                <li><strong>Tomàquet:</strong> 1 tomàquet madur ratllat.</li>
+                <li><strong>Oli:</strong> Oli d'oliva verge extra (generós, que cobreixi el fons central de la paella).</li>
+                <li><strong>Condiments:</strong> Sal, safrà en bri (o un bon pimentó dolç) i una rameta de romaní fresc.</li>
+                <li><strong>Aigua:</strong> Aproximadament el triple de volum que d'arròs.</li>
+            </ul>
+        </div>
+
+        <h2>👨‍🍳 Pas a Pas</h2>
+
+        <div class="step">
+            <h3>1. El daurat de la carn (Clau de l'èxit)</h3>
+            <p>Posa l'oli a la paella i, quan estigui calent, fregeix el pollastre i el conill. <strong>No tinguis pressa.</strong> La carn ha de quedar ben daurada, gairebé torradeta per fora. Això és el que donarà el gust i el color al brou.</p>
+        </div>
+
+        <div class="step">
+            <h3>2. La verdura i el sofregit</h3>
+            <p>Aparta la carn cap a les vores de la paella i posa la mongeta i el garrofó al centre. Fregeix-los uns minuts. Després, afegeix el tomàquet ratllat i deixa que perdi tota l'aigua i es torni fosc. Si fas servir pimentó dolç, tira'l ara i remena-ho ràpid (2 segons!) perquè no es cremi.</p>
+        </div>
+
+        <div class="step">
+            <h3>3. El brou (Crear el sabor)</h3>
+            <p>Afegeix l'aigua. Un truc visual: l'aigua ha d'arribar fins als reblons de les nanses de la paella. Posa-hi el safrà i la sal. Deixa-ho coure a foc mitjà uns <strong>20-25 minuts</strong>. Tasta el brou: ha d'estar "un puntet salat", ja que l'arròs l'absorbirà.</p>
+        </div>
+
+        <div class="step">
+            <h3>4. L'arròs (El moment de la veritat)</h3>
+            <p>Afegeix l'arròs fent una línia que creu de banda a banda la paella (el famós <strong>"cavalló"</strong>) que sobresurti un dit del brou. Reparteix-lo bé amb la paleta.</p>
+            <p style="margin-top: 10px;">• Posa la rameta de romaní a sobre (treu-la passats 5-10 minuts perquè no amargui).</p>
+            <p>• <strong>Foc fort</strong> els primers 8-10 minuts.</p>
+            <p>• <strong>Foc suau</strong> els últims 8-10 minuts.</p>
+        </div>
+
+        <blockquote>
+            <strong>Regla d'or:</strong> Un cop hagis repartit l'arròs, <strong>està prohibit tocar-lo</strong>. Necessitem que el gra deixi anar el midó just i no es faci una pasta.
+        </blockquote>
+
+        <div class="step">
+            <h3>5. El Socarrat i el Repòs</h3>
+            <p>Si sents un "crec-crec" al final, és que s'està fent el <strong>socarrat</strong> (l'arròs torrat del fons). Puja el foc l'últim minut amb compte de no cremar-lo. Apaga el foc i deixa-la reposar 5 minuts tapada amb un drap o paper de diari.</p>
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consells de "mestre paeller"</h3>
+            <ul>
+                <li><strong>L'aigua:</strong> Si pots fer-la amb l'aigua de València (molt calcària), millor. Si no, aigua mineral.</li>
+                <li><strong>El recipient:</strong> La "paella" és el ferro, no el menjar. Ha de ser ampla perquè l'arròs quedi en una capa fina.</li>
+                <li><strong>Llimona?</strong> Només per decorar o per netejar-se els dits després. Posar-ne a sobre de l'arròs mata el gust del safrà i el sofregit!</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Bon profit! Recepta defensada per la teva IA de confiança. 🥘</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
